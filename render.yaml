@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: flask-app
+    runtime: python
+    plan: free
+    buildCommand: ""
+    startCommand: waitress-serve --port=$PORT main:app
